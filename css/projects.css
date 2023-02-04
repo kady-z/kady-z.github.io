@@ -1,0 +1,101 @@
+.projects {
+    min-height: 100vh;
+    padding: 6rem 2rem 2rem 2rem;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "pone ptwo pthree"
+    "pone pfour pfive"
+    ;
+    gap: 15px;
+}
+
+.project-one {
+    grid-area: pone;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    overflow: hidden;
+}
+
+.project-two {
+    grid-area: ptwo;
+    overflow: hidden;
+}
+
+.project-three {
+    grid-area: pthree;
+    border-top-right-radius: 25px;
+    overflow: hidden;
+}
+
+.project-four {
+    grid-area: pfour;
+    overflow: hidden;
+}
+.project-five {
+    grid-area: pfive;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+}
+
+.project-img-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project-img-box img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1023px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.5fr 1fr 1fr;
+        grid-template-areas:
+        "pone pone" 
+        "ptwo pthree"
+        "pfour pfive"
+        ;
+        gap: 15px;
+    }
+
+    .project-one {
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0;
+    }
+
+    .project-three {
+        border-top-right-radius: 0;
+    }
+
+    .project-four {
+        border-bottom-left-radius: 25px;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr repeat(4, 1fr);
+        grid-template-areas:
+        "pone" 
+        "ptwo" "pthree"
+        "pfour" "pfive"
+        ;
+        gap: 15px;
+    }
+
+    .project-one,
+    .project-two,
+    .project-three,
+    .project-four,
+    .project-five {
+        border-radius: 25px;
+    }
+}

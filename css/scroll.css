@@ -1,0 +1,18 @@
+html::-webkit-scrollbar {
+    width: 20px; 
+ }
+
+html::-webkit-scrollbar-track {
+  background-color: grey;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 25px;
+  box-shadow: inset -1px -1px 6px white;
+}
+
+html::-webkit-scrollbar-button {
+    background-color: black;
+    border: 2px solid grey;
+}

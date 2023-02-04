@@ -1,0 +1,80 @@
+.services {
+    min-height:  100vh;
+    background: #fff;
+}
+
+.services,
+.services .services-container,
+.services-serviceBox,
+.serviceBox-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .services-container {
+    position: relative;
+    width: 80%;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 7rem 0 2rem 0;
+}
+
+.services .services-container .services-serviceBox {
+    position: relative;
+    background-color: #fff;
+    width: 350px;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px ;
+}
+
+.services-serviceBox .serviceBox-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--black-blue);
+    transition: .5s;
+    z-index: 1;
+}
+
+.services-serviceBox:hover .serviceBox-icon {
+    top: 30px;
+    left: calc(50% - 40px);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.serviceBox-icon i {
+    display: inline-block;
+    color: #fff;
+    font-size: 5rem;
+    transition: .5s;
+}
+
+.services-serviceBox:hover .serviceBox-icon i {
+    font-size: 3rem;
+}
+
+.services-serviceBox .serviceBox-content {
+    position: relative;
+    padding: 20px;
+    color: var(--black-blue);
+    text-align: center;
+    margin-top: 50px;
+    transform: scale(0);
+    transition: .5s;
+}    
+
+.services-serviceBox:hover .serviceBox-content {
+    transform: scale(1);
+    transition-delay: .25s;
+}
+
+.serviceBox-content h2 {
+    margin: 10px 0 5px 0;
+}
