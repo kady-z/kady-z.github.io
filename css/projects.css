@@ -12,6 +12,14 @@
     gap: 15px;
 }
 
+.project-one,
+.project-two,
+.project-three,
+.project-four,
+.project-five {
+    border: 5px solid var(--dark-blue);
+}
+
 .project-one {
     grid-area: pone;
     border-top-left-radius: 25px;
